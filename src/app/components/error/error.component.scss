@@ -1,0 +1,60 @@
+// 
+/* Full screen centered container */
+.error-container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #f0f0f0, #d6e4f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Inner content */
+.error-content {
+  max-width: 600px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Large 404 code */
+.error-code {
+  font-size: 120px;
+  margin: 0;
+  color: #ff4757;
+  letter-spacing: 10px;
+}
+
+/* Message below the code */
+.error-message {
+  font-size: 28px;
+  margin: 10px 0;
+  color: #2f3542;
+}
+
+/* Description */
+.error-description {
+  font-size: 16px;
+  color: #57606f;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.home-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1e90ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #3742fa;
+  transform: scale(1.05);
+}

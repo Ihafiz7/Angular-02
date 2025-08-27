@@ -1,0 +1,62 @@
+<div>
+    <div class="tab-pane fade show active" id="signup" role="tabpanel">
+        <div class="p-4 bg-white border rounded-4 shadow-sm">
+            <!-- Header -->
+            <div class="text-center mb-4">
+                <h4 class="fw-semibold text-success">Create an Account</h4>
+                <p class="text-muted small">Fill in your details to get started</p>
+            </div>
+
+            <form>
+                <!-- Full Name -->
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control rounded-3" id="signupName" placeholder="John Doe" required>
+                    <label for="signupName">Full Name</label>
+                </div>
+
+                <!-- Email -->
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control rounded-3" id="signupEmail" placeholder="name@example.com"
+                        required>
+                    <label for="signupEmail">Email Address</label>
+                </div>
+
+                <!-- Password -->
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control rounded-3" id="signupPassword" placeholder="Password"
+                        required>
+                    <label for="signupPassword">Password</label>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control rounded-3" id="confirmPassword"
+                        placeholder="Confirm Password" required>
+                    <label for="confirmPassword">Confirm Password</label>
+                </div>
+
+                <!-- Terms & Privacy Checkbox -->
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                    <label class="form-check-label text-muted small" for="agreeTerms">
+                        I agree to the <a href="#" class="link-primary text-decoration-none">Terms of Service</a> and <a
+                            href="#" class="link-primary text-decoration-none">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <!-- Sign Up Button -->
+                <button type="submit" class="btn btn-success w-100 py-3 rounded-3 fw-medium">
+                    Sign Up
+                </button>
+            </form>
+
+            <!-- Login Link -->
+            <div class="text-center mt-4">
+                <p class="small text-muted">
+                    Already have an account?
+                    <a routerLink="/login" routerLinkActive="active" class="link-success text-decoration-none">Log in</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
