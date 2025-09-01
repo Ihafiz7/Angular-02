@@ -8,17 +8,23 @@ import { ShopSingleComponent } from './components/shop-single/shop-single.compon
 import { ErrorComponent } from './components/error/error.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { UserListComponent } from './components/user-list/user-list.component';
+import { UserAddEditComponent } from './components/user-add-edit/user-add-edit.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: "home", component: HomeComponent },
   { path: "about", component: AboutComponent },
   { path: "contacts", component: ContactsComponent },
-  {path: "shop", component: ShopComponent},
+  { path: "shop", component: ShopComponent},
   { path: 'single/:id', component: ShopSingleComponent },
   { path: "login", component: LoginComponent },
-  {path: "signup", component: SignupComponent},
+  { path: "signup", component: SignupComponent},
+  { path: 'users', component: UserListComponent },
+  { path: 'users/add', component: UserAddEditComponent },
+  { path: 'users/edit/:id', component: UserAddEditComponent },
   { path: "**", component: ErrorComponent },
+
   
 ];
 
