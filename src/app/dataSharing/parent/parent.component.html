@@ -1,0 +1,12 @@
+<!-- <div class="bg-light">
+    <p>{{parentMessage}}</p>
+    <app-child [childMessage]="parentMessage"></app-child>
+</div> -->
+
+
+<div class="bg-info">
+    
+    <app-child (messageEvent)="receiveMessage($event)"></app-child>
+    <p class="text-secondary">{{message}}</p>
+
+</div>

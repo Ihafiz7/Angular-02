@@ -1,0 +1,41 @@
+<h1>Directives Examples</h1>
+
+<div *ngIf="isLogged; else loginBlock" class="container m-4">
+    <p>Welcome back!!!</p>
+</div>
+
+<ng-template #loginBlock class="container m-4">
+    <p>Please Login ...</p>
+</ng-template>
+
+<hr>
+
+<div class="container" appHighlight>
+    <h2>NgIf Else if Example:</h2>
+
+    <button class="btn btn-primary" (click)="changeStatus()">Next Status</button>
+
+    <p *ngIf="status === 1; else status2" class="text-success">
+        Status is 1 : waiting ...
+    </p>
+
+    <ng-template #status2>
+        <p *ngIf="status === 2; else status3" class="text-dark">
+            Status is 2 : waiting ...
+        </p>
+    </ng-template>
+
+    <ng-template #status3>
+        <p class="text-primary">Status is 3 : waiting ...</p>
+    </ng-template>
+</div>
+
+<h2>For Loop:</h2>
+<div *ngFor="let v of users; index as i" class="container">
+    <li class="list-unstyled "> {{i+1}}. {{v}}</li>
+</div>
+
+<div [ngSwitch]="role" class="mt-5 text-uppercase text-primary">
+    <p *ngSwitchCase="'admin'"> WoW an admin!!! ---Full Access</p>
+    <p *ngSwitchDefault> A pasent!!! ---No Access</p>
+</div>

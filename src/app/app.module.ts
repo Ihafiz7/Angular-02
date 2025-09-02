@@ -18,6 +18,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UserAddEditComponent } from './components/user-add-edit/user-add-edit.component';
 import { UserListComponent } from './components/user-list/user-list.component';
+import { ParentComponent } from './dataSharing/parent/parent.component';
+import { ChildComponent } from './dataSharing/child/child.component';
+import { SenderComponent } from './dataSharing/sender/sender.component';
+import { ReciverComponent } from './dataSharing/reciver/reciver.component';
+import { ExampleComponent } from './directives/example/example.component';
+import { HiglightDirective } from './directives/highlight.directive';
 
 
 @NgModule({
@@ -35,7 +41,13 @@ import { UserListComponent } from './components/user-list/user-list.component';
     LoginComponent,
     SignupComponent,
     UserAddEditComponent,
-    UserListComponent
+    UserListComponent,
+    ParentComponent,
+    ChildComponent,
+    SenderComponent,
+    ReciverComponent,
+    ExampleComponent,
+    HiglightDirective
   ],
   imports: [
     BrowserModule,
